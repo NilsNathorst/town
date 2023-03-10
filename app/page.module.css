@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  font-family: var(--main-font);
+}
+
+.header {
+  color: rgb(0, 0, 30);
+  font-variation-settings: "wght" 100;
+  animation: breathe infinite 2s ease-in-out;
+}
+.header:hover {
+  color: red;
+}
+
+@keyframes breathe {
+  0% {
+    font-variation-settings: "wght" 100;
+  }
+
+  50% {
+    font-variation-settings: "wght" 1000;
+  }
+
+  100% {
+    font-variation-settings: "wght" 100;
+  }
+}
